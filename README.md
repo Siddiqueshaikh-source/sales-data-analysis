@@ -34,9 +34,9 @@ orders, customers, products, regions, sales, discount and profit.
 - Orders with 30%+ discount had a [X]% margin versus [X]% with no discount
 
 ## Charts
-![Category](charts/02_category.png)
-![Monthly trend](charts/06_monthly_trend.png)
-![Discount vs margin](charts/08_discount_margin.png)
+![Category](Sales%20data%20analysis/charts/02_category.png)
+![Monthly trend](Sales%20data%20analysis/charts/06_monthly_trend.png)
+![Discount vs margin](Sales%20data%20analysis/charts/08_discount_margin.png)
 
 ## Recommendations
 - [Your recommendation based on loss-making sub-categories]
