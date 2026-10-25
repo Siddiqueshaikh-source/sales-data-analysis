@@ -30,27 +30,13 @@ Retail "Superstore" sales data, downloaded from Kaggle ([dataset name and link])
 5. **Tested discounts:** compared profit margin across discount levels
 
 ## Key findings
-best_cat      = cat["Sales"].idxmax()
-best_cat_marg = cat["Margin %"].idxmax()
-best_region   = reg["Sales"].idxmax()
-best_reg_marg = reg["Margin %"].idxmax()
-weak_reg      = reg["Margin %"].idxmin()
-best_month    = df.groupby("Month Name")["Sales"].sum().idxmax()
-worst_month   = df.groupby("Month Name")["Sales"].sum().idxmin()
-top_product   = top_products["Sales"].idxmax()
-best_year     = yearly["Sales"].idxmax()
-hi_disc = df.loc[df["Discount"] >= 0.3]
-no_disc = df.loc[df["Discount"] == 0]
-hi_margin = hi_disc["Profit"].sum() / hi_disc["Sales"].sum() * 100
-no_margin = no_disc["Profit"].sum() / no_disc["Sales"].sum() * 100
-
-print(f"1. Overall: ${total_sales:,.0f} in sales and ${total_profit:,.0f} profit ({overall_margin:.1f}% margin) across {total_orders:,} orders.")
-print(f"2. '{best_cat}' drives the most sales; '{best_cat_marg}' has the best profit margin.")
-print(f"3. Top product by sales: '{top_product}'.")
-print(f"4. Loss-making sub-categories: {', '.join(loss_makers.index) if len(loss_makers) else 'none'}.")
-print(f"5. '{best_region}' is the biggest region by sales; '{best_reg_marg}' has the best margin and '{weak_reg}' the weakest.")
-print(f"6. Sales peak in {best_month} and are lowest in {worst_month}; {best_year} was the strongest year.")
-print(f"7. Orders with 30%+ discount earn a {hi_margin:.1f}% margin versus {no_margin:.1f}% with no discount.")
+1. Overall: $2,297,201 in sales and $286,397 profit (12.5% margin) across 5,009 orders.
+2. 'Technology' drives the most sales; 'Technology' has the best profit margin.
+3. Top product by sales: 'Canon imageCLASS 2200 Advanced Copier'.
+4. Loss-making sub-categories: Tables, Bookcases, Supplies.
+5. 'West' is the biggest region by sales; 'West' has the best margin and 'Central' the weakest.
+6. Sales peak in Nov and are lowest in Feb; 2017 was the strongest year.
+7. Orders with 30%+ discount earn a -37.3% margin versus 29.5% with no discount.
 
 ## Charts
 ![Category](Sales%20data%20analysis/charts/02_category.png)
